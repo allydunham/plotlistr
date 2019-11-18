@@ -72,7 +72,7 @@ sv_pltlst <- function(p, root, overwrite, verbose, level = 1,
       if (!is.null(params$filename)){
         plot_name <- params$filename
       } else {
-        plot_name <- paste0(name, ".", ifelse(is.null(params$file_format),
+        plot_name <- paste0(name, ".", ifelse(!is.null(params$file_format),
                                               params$file_format,
                                               default_format))
       }
