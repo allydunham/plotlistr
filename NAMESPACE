@@ -2,6 +2,7 @@
 
 S3method(smart_save,default)
 S3method(smart_save,labeled_plot)
+S3method(smart_save,multipanelfigure)
 export(labeled_plot)
 export(save_plotlist)
 export(smart_save)

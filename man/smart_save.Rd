@@ -4,14 +4,16 @@
 \alias{smart_save}
 \alias{smart_save.default}
 \alias{smart_save.labeled_plot}
+\alias{smart_save.multipanelfigure}
 \title{Inteligently save plot objects.}
 \usage{
 smart_save(p, ...)
 
 \method{smart_save}{default}(p, filename, ...)
 
-\method{smart_save}{labeled_plot}(p, filename = NULL, override = FALSE,
-  ...)
+\method{smart_save}{labeled_plot}(p, filename = NULL, override = FALSE, ...)
+
+\method{smart_save}{multipanelfigure}(p, filename, ...)
 }
 \arguments{
 \item{p}{Plot object to save.}
@@ -36,5 +38,7 @@ dispatching on the \code{p} argument.
 \item \code{default}: Use \code{ggsave} by default
 
 \item \code{labeled_plot}: Process labels from \code{labeled_plot}
+
+\item \code{multipanelfigure}: Save \code{multipanelfigure} objects
 }}
 

@@ -4,8 +4,7 @@
 \alias{sv_pltlst}
 \title{Internal recursive function for saving plotlists}
 \usage{
-sv_pltlst(p, root, overwrite, verbose, level = 1,
-  default_format = "pdf")
+sv_pltlst(p, root, overwrite, verbose, level = 1, default_format = "pdf")
 }
 \arguments{
 \item{p}{Plot or list to save.}

@@ -4,8 +4,13 @@
 \alias{save_plotlist}
 \title{Save lists of plots.}
 \usage{
-save_plotlist(plotlist, root, overwrite = c("none", "all", "plot"),
-  verbose = 1, default_format = "pdf")
+save_plotlist(
+  plotlist,
+  root,
+  overwrite = c("none", "all", "plot"),
+  verbose = 1,
+  default_format = "pdf"
+)
 }
 \arguments{
 \item{plotlist}{Potentially nested list of plot objects.}

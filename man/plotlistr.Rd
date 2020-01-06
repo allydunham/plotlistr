@@ -3,7 +3,6 @@
 \docType{package}
 \name{plotlistr}
 \alias{plotlistr}
-\alias{plotlistr-package}
 \title{plotlistr: A package for managing lists of plots}
 \description{
 Tools to work with lists of plots, allowing you to automatically generate
