@@ -2,20 +2,26 @@
 % Please edit documentation in R/labeled_plot.R
 \name{labeled_plot}
 \alias{labeled_plot}
+\alias{labeled_plot.default}
+\alias{labeled_plot.labeled_plot}
 \title{Attach labels to a plot object}
 \usage{
-labeled_plot(p, overwrite = FALSE, ...)
+labeled_plot(p, ...)
+
+\method{labeled_plot}{default}(p, ...)
+
+\method{labeled_plot}{labeled_plot}(p, ...)
 }
 \arguments{
 \item{p}{Plot to wrap}
 
-\item{overwrite}{Overwrite existing files by default.}
-
 \item{...}{Other parameters passed to saving method (e.g.
 see \code{\link[ggplot2]{ggsave}})}
 
+\item{overwrite}{Overwrite existing files by default.}
+
 \item{filename}{Name of file to save to, including extension. Will be added
-to the path when saving plot lists. Overides \code{file_format}}
+to the path when saving plot lists. Overrides \code{file_format}}
 
 \item{file_format}{Format of file to save (e.g. pdf, jpg)}
 
@@ -23,8 +29,16 @@ to the path when saving plot lists. Overides \code{file_format}}
 }
 \description{
 \code{labeled_plot} creates a plot object with attributes describing how to
-save it
+save it. If \code{p} is already a \code{labeled_plot} the additional labels
+will be added to it.
 }
 \details{
 This is an S3 class interacting with the \code{smart_save} S3 generic.
 }
+\section{Methods (by class)}{
+\itemize{
+\item \code{default}: Labels to an unlabled plot
+
+\item \code{labeled_plot}: Add additional labels to a labeled plot
+}}
+
