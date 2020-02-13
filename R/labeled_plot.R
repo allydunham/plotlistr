@@ -58,5 +58,6 @@ labeled_plot.labeled_plot <- function(p, ...) {
   old_params <- old_params[!names(old_params) %in% names(params)]
 
   attributes(p)$plotlistr_params <- c(params, old_params)
+
   return(p)
 }
